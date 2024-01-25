@@ -1,10 +1,10 @@
 import { useState } from "react";
 import "./App.css";
-// import { apiKey } from "./util.js";
 
-// import apiKey from "./util.js";
+
+
 // import { apiKey, abc as content } from "./util.js";
-// import * as util from "./util.js";
+ import * as util from "./util.js";
 
 const content = [
   [
@@ -26,7 +26,7 @@ const content = [
   ]
 ];
 
-export default function App() {
+ function App() {
   const [activeContentIndex, setActiveContentIndex] = useState(0);
 
   return (
@@ -72,13 +72,13 @@ export default function App() {
   );
 }
 
-// console.log(util.apiKey);
-// console.log(content);
+console.log(util.apiKey);
+console.log(content);
 
-// const userMessage = "Hello World!!!";
+ const userMessage = "Hello World!!!";
 
-// console.log(userMessage);
-// console.log(userMessage);
+ console.log(userMessage);
+console.log(userMessage);
 
 // function createGreeting(userName, message = "Hello!") {
 // console.log(userName);
@@ -222,3 +222,5 @@ const hobbies = ["Sports", "Cooking"];
 // hobbies = [];
 hobbies.push("Working");
 console.log(hobbies);
+
+export default App;
