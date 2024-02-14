@@ -1,0 +1,14 @@
+{
+  "node": {
+    "fa5e72c17cd0ac7360239906c5d633c053d57045": {
+      "workers": {
+        "app/meals/share/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5CWaitechnology%5C%5CGitHub%5C%5Creact-training%5C%5CSection%2025%5C%5Clib%5C%5Cactions.js%22%2C%5B%22shareMeal%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/meals/share/page": "action-browser"
+      }
+    }
+  },
+  "edge": {},
+  "encryptionKey": "x5Kn9xX7A21IgElmt+YZFujWKY+6/YLInkweRfXlwGs="
+}
