@@ -1,13 +1,14 @@
+// AppRouter.js
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import Home from './Home';
 import ProductDetails from './ProductDetails';
-import HomeComponent from './HomeComponent'; // Import the new component
-import ProductDetailsComponent from './ProductDetailsComponent'; // Import the new component
+import HomeComponent from './HomeComponent';
+import ProductDetailsComponent from './ProductDetailsComponent';
 
-const AppRouter = () => {
-  return (
-    <Router>
+const AppRouter = () => (
+  <Router>
+    <div>
       <nav>
         <ul>
           <li>
@@ -20,15 +21,13 @@ const AppRouter = () => {
       </nav>
 
       <Routes>
-        <Route path="/" element={<Home />}>
-          <Route index element={<HomeComponent />} />
-        </Route>
-        <Route path="/product-details" element={<ProductDetails />}>
-          <Route index element={<ProductDetailsComponent />} />
-        </Route>
+        <Route path="/" element={<Home />} />
+        <Route path="/home-component" element={<HomeComponent />} />
+        <Route path="/product-details" element={<ProductDetails />} />
+        <Route path="/product-details-component" element={<ProductDetailsComponent />} />
       </Routes>
-    </Router>
-  );
-};
+    </div>
+  </Router>
+);
 
 export default AppRouter;
