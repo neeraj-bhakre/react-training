@@ -4,7 +4,7 @@ import AppRouter from './AppRouter';
 const App = () => {
   return (
     <div>
-      <h1>React Router App</h1>
+      <h1>Pharma Application</h1>
       <AppRouter />
     </div>
   );
