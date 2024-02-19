@@ -1,0 +1,16 @@
+/* AppRouter.css */
+h1 {
+    text-align: center;
+    background-color:aqua;
+  }
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #ddd;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+  }
