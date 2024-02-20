@@ -1,0 +1,35 @@
+/* BookStore.css */
+
+div.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  div.book-item {
+    flex: 0 0 calc(25% - 20px);
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  div.book-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.book-item button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  div.book-item button:hover {
+    background-color: #0056b3;
+  }

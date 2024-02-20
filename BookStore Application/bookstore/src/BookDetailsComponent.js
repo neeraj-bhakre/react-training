@@ -1,17 +1,20 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import BookStore from './BookStore';
 
 const BookDetailsComponent = () => {
   const navigate = useNavigate();
 
-  const handleClick = () => {
+  const goToNestedRoute = () => {
     navigate('/book/nested');
   }
 
   return (
     <div>
       <h2>Book Details Component</h2>
-      <button onClick={handleClick}>Go to Nested Route</button>
+      <button onClick={goToNestedRoute}>Go to Nested Route</button>
+      <BookStore />;
+      
     </div>
   );
 }

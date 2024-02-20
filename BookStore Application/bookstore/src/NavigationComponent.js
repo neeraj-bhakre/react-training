@@ -1,17 +1,17 @@
+// NavigationComponent.js
 import React from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const NavigationComponent = () => {
-  const history = useHistory();
+  const navigate = useNavigate();
 
-  const handleNavigation = () => {
-    history.push('/bookdetails'); // Navigate to the '/bookdetails' route
+  const handleButtonClick = () => {
+    navigate('/targetRoute'); // replace '/targetRoute' with the path you want to navigate to
   };
 
   return (
     <div>
-      <h2>Navigation Component</h2>
-      <button onClick={handleNavigation}>Go to Book Details</button>
+      <button onClick={handleButtonClick}>Navigate</button>
     </div>
   );
 };

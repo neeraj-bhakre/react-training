@@ -1,16 +1,21 @@
 /* AppRouter.css */
 h1 {
     text-align: center;
-    background-color:aqua;
+    color: #333;
   }
-nav {
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;
-    background-color: #ddd;
+  
+  nav {
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    margin-bottom: 20px;
   }
   
   nav a {
+    margin: 0 10px;
     text-decoration: none;
-    color: black;
+    color: #333;
+  }
+  
+  nav a:hover {
+    color: #007BFF;
   }
