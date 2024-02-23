@@ -1,19 +1,7 @@
 // store.js
 import { createStore } from 'redux';
+import reducer from './reducer';
 
-const initialState = {
-  cart: []
-};
-
-function cartReducer(state = initialState, action) {
-  switch (action.type) {
-    case 'ADD_TO_CART':
-      return { ...state, cart: [...state.cart, action.payload] };
-    default:
-      return state;
-  }
-}
-
-const store = createStore(cartReducer);
+const store = createStore(reducer);
 
 export default store;

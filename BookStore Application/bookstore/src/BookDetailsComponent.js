@@ -6,13 +6,13 @@ const BookDetailsComponent = () => {
   const navigate = useNavigate();
 
   const goToNestedRoute = () => {
-    navigate('/book/nested');
+    navigate('/');
   }
 
   return (
     <div>
       <h2>Book Details Component</h2>
-      <button onClick={goToNestedRoute}>Go to Nested Route</button>
+      <button onClick={goToNestedRoute}>Back To Home</button>
       <BookStore />;
       
     </div>

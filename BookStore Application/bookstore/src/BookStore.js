@@ -1,7 +1,10 @@
 import React from 'react';
 import './BookStore.css';
+import { useCart } from './CartContext'; // Import the useCart hook
 
 const BookStore = () => {
+  const { addToCart } = useCart(); // Use the addToCart function from the useCart hook
+
   const books = [
     { 
       id: 1, 
@@ -33,10 +36,9 @@ const BookStore = () => {
     },
   ];
 
-
-  const addToCart = (book) => {
-    console.log(`Added ₹{book.title} to cart.`);
-  };
+ // const addToCart = (book) => {
+ // console.log('Added ₹{book.title} to cart.', book);
+ // };
 
   return (
     <div className="book-list">
@@ -47,6 +49,7 @@ const BookStore = () => {
           <p>{book.description}</p>
           <p>₹{book.price}</p>
           <button onClick={() => addToCart(book)} className="add-to-cart-button">Add to cart</button>
+
         </div>
       ))}
     </div>

@@ -1,20 +1,18 @@
-// App.js
-import React from 'react';
-import { Provider } from 'react-redux';
-import store from './Store';
+import React, { useState } from 'react';
 import AppRouter from './AppRouter';
-//import BookStore from './BookStore';
-//import BookList from './BookList';
-//import Cart from './Cart';
+import { CartProvider } from './CartContext';
 
-const App = () => {
+function App() {
+  const [cart, setCart] = useState([]);
+
+  const addToCart = (book) => {
+    setCart(prevCart => [...prevCart, book]);
+  };
+
   return (
-    <Provider store={store}>
+    <CartProvider value={{ cart, addToCart }}>
       <AppRouter />
-     
-      {/* <BookList />
-      <Cart /> */}
-    </Provider>
+    </CartProvider>
   );
 }
 
