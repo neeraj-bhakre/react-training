@@ -1,0 +1,36 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 20px;
+}
+
+/* Adjust cart link styling */
+nav a:last-child {
+  margin-right: 0;
+  margin-left: auto; /* Push the cart link to the right */
+  font-weight: bold;
+}
+
+/* Apply a hover effect for better user experience */
+nav a:hover {
+  text-decoration: underline;
+}

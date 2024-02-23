@@ -1,0 +1,13 @@
+.home-component {
+  text-align: center;
+  padding: 5px;
+}
+
+.home-component h2 {
+  color: #007bff;
+}
+
+.home-component img {
+  max-width: 100%; /* This will ensure the image does not exceed its container's width */
+  height: auto; /* This will maintain the aspect ratio of the image */
+}

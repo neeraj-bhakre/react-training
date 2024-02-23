@@ -12,7 +12,7 @@ const ProductDetails = () => {
     <div>
       <h1>Product Details</h1>
       <button onClick={navigateToHome}>Go to Home</button>
-      <Link to="/product-details-component">Go to Product Details Component</Link>
+      <Link to="/product-details-component">Go to Product Details</Link>
     </div>
   );
 };

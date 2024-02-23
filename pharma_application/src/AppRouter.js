@@ -1,32 +1,27 @@
-// AppRouter.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
-import Home from './Home';
 import ProductDetails from './ProductDetails';
 import HomeComponent from './HomeComponent';
-import ProductDetailsComponent from './ProductDetailsComponent';
+import ProductList from './ProductList';
+import './AppRouter.css';
+import Cart from './Cart';
 
 const AppRouter = () => (
   <Router>
-    <div>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/product-details">Product Details</Link>
-          </li>
-        </ul>
-      </nav>
+    <h1>Pharma Store</h1>
+    <nav>
+      <Link to="/">Home</Link>
+      <Link to="/pharma-product-list">Product Details</Link>
+      <Link to="/store">Cart</Link>
+    </nav>
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/home-component" element={<HomeComponent />} />
-        <Route path="/product-details" element={<ProductDetails />} />
-        <Route path="/product-details-component" element={<ProductDetailsComponent />} />
-      </Routes>
-    </div>
+
+    <Routes>
+      <Route path="/" element={<HomeComponent />} />
+      <Route path="/product-details" element={<ProductDetails />} />
+      <Route path="/pharma-product-list" element={<ProductList />} />
+      <Route path="/store" element={<Cart />} />
+    </Routes>
   </Router>
 );
 

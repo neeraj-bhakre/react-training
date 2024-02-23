@@ -10,9 +10,8 @@ const Home = () => {
 
   return (
     <div>
-      <h1>Home</h1>
       <button onClick={navigateToProductDetails}>Go to Product Details</button>
-      <Link to="/home-component">Go to Home Component</Link>
+      <Link to="/">Go to Home</Link>
     </div>
   );
 };

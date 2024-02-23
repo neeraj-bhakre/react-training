@@ -1,0 +1,76 @@
+.pharma-product-list {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .pharma-product-list {
+    text-align: center;
+    padding: 5px;
+  }
+
+  .pharma-product-list h2 {
+    color: #007bff;
+  }
+  
+  .pharma-product-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+  }
+  
+  .pharma-product-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .product-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .product-price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .add-to-cart-button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .add-to-cart-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Increase the width of the cart */
+  .cart {
+    width: 300px; /* Adjust the width as needed */
+    background-color: #f8f8f8;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .cart-item {
+    margin-bottom: 10px;
+  }
+  
+  .cart-total {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+  }

@@ -1,10 +1,11 @@
 import React from 'react';
+import './HomeComponent.css';
 
 const HomeComponent = () => {
   return (
-    <div>
-      <h2>Home Component</h2>
-      <p>Welcome to the nested home component!</p>
+    <div className="home-component">
+      <h2>Welcome to Akshay Pharma</h2>
+      <img src="home.jpg" alt="description" />
     </div>
   );
 };
